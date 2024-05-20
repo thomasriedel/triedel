@@ -1,0 +1,7 @@
+.btn-icon {
+    @apply p-2 rounded-full hover:bg-black/5;
+}
+
+.btn-icon svg {
+    @apply w-5 h-5;
+}

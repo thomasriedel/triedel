@@ -1,0 +1,37 @@
+{
+  "routes": {
+    "home": "Start",
+    "colors": "Farben",
+    "typography": "Typografie",
+    "icons": "Icons"
+  },
+  "colors-view": {
+    "colors": {
+      "gradient-0": "Verlauf 0",
+      "gradient-1": "Verlauf 1",
+      "text": "Text",
+      "accent": "Akzent"
+    }
+  },
+  "home-view": {
+    "greeting": "Hi, ich bin",
+    "what-i-am": {
+      "cat-father": "Katzenpapa",
+      "cyclist": "Radfahrer",
+      "darts-player": "Darts Spieler",
+      "full-stack-developer": "Full Stack Entwickler",
+      "hobby-chef": "Hobbykoch",
+      "rocket-league-champ": "Rocket League Champ",
+      "software-developer": "Software Entwickler",
+      "squash-player": "Squash-Spieler",
+      "ux-professional": "UX Professional",
+      "wdy-gp-champ": "worldiety GP Sieger"
+    }
+  },
+  "icons-view": {
+    "title": "Verwendete Icons",
+    "creator": "Ersteller",
+    "icon-pack": "Icon Pack",
+    "license": "Lizenz"
+  }
+}
