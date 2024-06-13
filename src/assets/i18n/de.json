@@ -3,7 +3,8 @@
     "home": "Start",
     "colors": "Farben",
     "typography": "Typografie",
-    "icons": "Icons"
+    "icons": "Icons",
+    "imprint": "Impressum"
   },
   "colors-view": {
     "colors": {
@@ -33,5 +34,18 @@
     "creator": "Ersteller",
     "icon-pack": "Icon Pack",
     "license": "Lizenz"
+  },
+  "personal-data": {
+    "firstname": "Vorname",
+    "lastname": "Nachname",
+    "street": "Straße",
+    "zip-code": "PLZ",
+    "city": "Ort",
+    "email": "E-Mail",
+    "mobile": "Mobil"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "information-according": "Angaben gemäß"
   }
 }

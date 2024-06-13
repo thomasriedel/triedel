@@ -3,7 +3,7 @@
 
     <div class="w-1/3">
       <router-link to="/">
-        <h5 class="font-bold whitespace-nowrap">
+        <h5 class="font-bold whitespace-nowrap inline">
           Thomas Riedel
         </h5>
       </router-link>

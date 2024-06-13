@@ -30,6 +30,10 @@ const currentRoute = computed<RouteLocationNormalized>(() => router.currentRoute
   @apply px-6 max-w-[1400px] mx-auto py-12 flex items-center justify-center;
 }
 
+.app-footer .navigation {
+  @apply flex space-x-12;
+}
+
 .app-footer .navigation-link.active {
   @apply font-semibold;
 }
