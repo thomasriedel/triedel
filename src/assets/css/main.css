@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    @apply bg-gradient-to-br from-triedel-gradient-0 to-triedel-gradient-1;
-    @apply text-triedel-text;
+    @apply bg-gradient-to-br from-triedel-gradient-0 to-triedel-gradient-1 dark:from-triedel-dark-gradient-0 dark:to-triedel-dark-gradient-1;
+    @apply text-triedel-text dark:text-triedel-dark-text;
     @apply min-h-screen;
 }

@@ -1,6 +1,6 @@
 .card {
     @apply rounded-xl p-6;
-    @apply backdrop-blur bg-triedel-gradient-0/50 duration-150 shadow-md;
+    @apply backdrop-blur bg-triedel-gradient-0/50 dark:bg-triedel-dark-gradient-1/50 duration-150 shadow-md;
 }
 
 .mobile-card {

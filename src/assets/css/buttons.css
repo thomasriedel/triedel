@@ -4,11 +4,11 @@
 
 .btn-icon,
 .btn-icon-filled {
-    @apply p-2 rounded-full hover:bg-black/5;
+    @apply p-2 rounded-full hover:bg-black/5 dark:hover:bg-white/5;
 }
 
 .btn-icon-filled {
-    @apply backdrop-blur bg-white/40 shadow;
+    @apply backdrop-blur bg-white/40 dark:bg-black/40 shadow;
 }
 
 .btn-icon svg {

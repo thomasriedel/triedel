@@ -4,7 +4,7 @@
 
     <div class="card whitespace-pre-line max-w-3xl mb-8">
       {{ $t('home-view.introduction') }}
-      <img :src="ImageSignature" alt="Thomas" class="image-signature"/>
+      <img :src="ImageSignature" alt="Thomas" class="image-signature dark:invert dark:opacity-90"/>
     </div>
 
     <Socials/>

@@ -4,6 +4,7 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router'
 import {createI18n} from "vue-i18n";
+import { Core as AppCore } from './Core';
 
 import de from './assets/i18n/de.json';
 
@@ -21,5 +22,7 @@ const app = createApp(App)
 
 app.use(i18n);
 app.use(router);
+
+AppCore.init();
 
 app.mount('#app')

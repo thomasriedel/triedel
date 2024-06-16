@@ -4,6 +4,7 @@ export default {
         "./index.html",
         "./src/**/*.{vue,js,ts,jsx,tsx}",
     ],
+    darkMode: 'selector',
     theme: {
         extend: {
             colors: {
@@ -12,8 +13,16 @@ export default {
                     text: '#090e15',
                     gradient: {
                         0: '#ebf4f5',
-                        1: '#b5c6e0',
-                    }
+                        1: '#698cbf',
+                    },
+                },
+                "triedel-dark": {
+                    accent: '#e0cfb5',
+                    text: '#ebf4f5',
+                    gradient: {
+                        0: '#294861',
+                        1: '#0e1c26',
+                    },
                 }
             }
         },

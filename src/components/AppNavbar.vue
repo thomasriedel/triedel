@@ -24,17 +24,24 @@
             </div>
           </router-link>
         </template>
-        <div class="navigation-link lg:!hidden">
-          <IconCog/>
-          {{ $t('settings.label') }}
+        <div class="navigation-link lg:!hidden" @click="toggleDarkMode">
+          <IconLightbulb v-if="!isDarkMode" class="w-5 h-5"/>
+          <IconLightbulbFlash v-else class="w-5 h-5"/>
+          <span v-if="isDarkMode">
+            {{ $t('user-settings.dark-mode.disable') }}
+          </span>
+          <span v-else>
+            {{ $t('user-settings.dark-mode.enable') }}
+          </span>
         </div>
         <div v-if="activeElement" class="active-bg" :style="activeLinkBgStyle"></div>
       </div>
     </div>
 
     <div class="lg:w-1/3 flex justify-end">
-      <button class="btn-icon settings-button hidden lg:block">
-        <IconCog class="w-5 h-5"/>
+      <button class="btn-icon hidden lg:block" @click="toggleDarkMode">
+        <IconLightbulb v-if="!isDarkMode" class="w-5 h-5"/>
+        <IconLightbulbFlash v-else class="w-5 h-5"/>
       </button>
       <button
           class="btn-icon-filled menu-button lg:hidden"
@@ -49,7 +56,8 @@
 <script lang="ts" setup>
 import {type RouteLocationNormalized, useRouter} from "vue-router";
 import {computed, nextTick, onMounted, ref, watch} from "vue";
-import {IconArrowRight, IconCog, IconMenu} from '@/assets/icons/outline';
+import {IconArrowRight, IconLightbulb, IconLightbulbFlash, IconMenu} from '@/assets/icons/outline';
+import {Core} from "@/Core";
 
 const router = useRouter();
 const routes = router.getRoutes().filter((r) => r.meta.navbar);
@@ -60,6 +68,12 @@ const activeElement = ref<Element | null>(null);
 const activeLinkBgStyle = ref('');
 
 const mobileNavVisible = ref(false);
+const isDarkMode = ref(Core.userSettingsService.isDarkMode());
+
+function toggleDarkMode(): void {
+  Core.userSettingsService.setDarkMode(!isDarkMode.value);
+  isDarkMode.value = Core.userSettingsService.isDarkMode();
+}
 
 function calculateActiveLinkBgStyle(): void {
   if (!activeElement.value) return;
@@ -115,7 +129,7 @@ init();
 }
 
 .app-navbar .navigation {
-  @apply rounded-3xl lg:rounded-full p-1.5 shadow-md relative flex flex-col lg:flex-row backdrop-blur bg-white/40;
+  @apply rounded-3xl lg:rounded-full p-1.5 shadow-md relative flex flex-col lg:flex-row backdrop-blur bg-white/40 dark:bg-black/40;
 }
 
 .app-navbar .navigation .navigation-link {
@@ -127,7 +141,7 @@ init();
 }
 
 .app-navbar .navigation .active-bg {
-  @apply absolute top-0 bottom-0 rounded-full duration-100 pointer-events-none bg-triedel-text/5;
+  @apply absolute top-0 bottom-0 rounded-full duration-100 pointer-events-none bg-triedel-text/5 dark:bg-triedel-dark-text/5;
 }
 
 .settings-button svg {

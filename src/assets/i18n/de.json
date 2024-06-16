@@ -49,7 +49,10 @@
     "email": "E-Mail",
     "mobile": "Mobil"
   },
-  "settings": {
-    "label": "Einstellungen"
+  "user-settings": {
+    "dark-mode": {
+      "disable": "Licht an",
+      "enable": "Licht aus"
+    }
   }
 }
