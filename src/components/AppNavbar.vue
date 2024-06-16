@@ -1,32 +1,47 @@
 <template>
   <div class="app-navbar">
 
-    <div class="w-1/3">
+    <div class="lg:w-1/3">
       <router-link to="/">
-        <h5 class="font-bold whitespace-nowrap inline">
-          Thomas Riedel
-        </h5>
+        <div class="inline-block backdrop-blur py-1 px-3 -mt-1 -ml-3 rounded-full">
+          <h5 class="font-bold whitespace-nowrap inline">
+            Thomas Riedel
+          </h5>
+        </div>
       </router-link>
     </div>
 
-    <div class="navigation" @change="reloadActiveElement">
-      <template v-for="route in routes" :key="`navbar_route_${route.name}`">
-        <router-link :to="{ name: route.name }">
-          <div
-              class="navigation-link"
-              :class="{ active: route.name === currentRoute.name }"
-          >
-            <component v-if="route.meta.icon" :is="route.meta.icon"/>
-            {{ $t(`routes.${route.name as string}`) }}
-          </div>
-        </router-link>
-      </template>
-      <div v-if="activeElement" class="active-bg" :style="activeLinkBgStyle"></div>
+    <div class="navigation-container" :class="mobileNavVisible ? 'nav-visible' : ''">
+      <div class="navigation" @change="reloadActiveElement">
+        <template v-for="route in routes" :key="`navbar_route_${route.name}`">
+          <router-link :to="{ name: route.name }" @click="mobileNavVisible = false">
+            <div
+                class="navigation-link"
+                :class="{ active: route.name === currentRoute.name }"
+            >
+              <component v-if="route.meta.icon" :is="route.meta.icon"/>
+              {{ $t(`routes.${route.name as string}`) }}
+            </div>
+          </router-link>
+        </template>
+        <div class="navigation-link lg:!hidden">
+          <IconCog/>
+          {{ $t('settings.label') }}
+        </div>
+        <div v-if="activeElement" class="active-bg" :style="activeLinkBgStyle"></div>
+      </div>
     </div>
 
-    <div class="w-1/3 flex justify-end">
-      <button class="btn-icon settings-button">
-        <IconCog class="w-5 h-5" />
+    <div class="lg:w-1/3 flex justify-end">
+      <button class="btn-icon settings-button hidden lg:block">
+        <IconCog class="w-5 h-5"/>
+      </button>
+      <button
+          class="btn-icon-filled menu-button lg:hidden"
+          @click="mobileNavVisible = !mobileNavVisible"
+      >
+        <IconMenu v-if="!mobileNavVisible" class="w-5 h-5"/>
+        <IconArrowRight v-else class="w-5 h-5"/>
       </button>
     </div>
   </div>
@@ -34,7 +49,7 @@
 <script lang="ts" setup>
 import {type RouteLocationNormalized, useRouter} from "vue-router";
 import {computed, nextTick, onMounted, ref, watch} from "vue";
-import { IconCog } from '@/assets/icons/outline';
+import {IconArrowRight, IconCog, IconMenu} from '@/assets/icons/outline';
 
 const router = useRouter();
 const routes = router.getRoutes().filter((r) => r.meta.navbar);
@@ -43,6 +58,8 @@ const currentRoute = computed<RouteLocationNormalized>(() => router.currentRoute
 
 const activeElement = ref<Element | null>(null);
 const activeLinkBgStyle = ref('');
+
+const mobileNavVisible = ref(false);
 
 function calculateActiveLinkBgStyle(): void {
   if (!activeElement.value) return;
@@ -84,15 +101,25 @@ init();
 </script>
 <style scoped>
 .app-navbar {
-  @apply fixed top-0 left-1/2 transform -translate-x-1/2 w-screen flex items-center justify-between h-32 z-30 px-6 max-w-[1400px];
+  @apply fixed top-0 left-1/2 transform -translate-x-1/2 w-screen flex items-center justify-between h-24 lg:h-32 z-30 px-6 max-w-[1400px];
+}
+
+.app-navbar .navigation-container {
+  @apply px-6 -mt-5 lg:mt-0 duration-200;
+  @apply absolute top-full left-full;
+  @apply lg:relative lg:top-auto lg:left-auto;
+}
+
+.app-navbar .navigation-container.nav-visible {
+  @apply transform -translate-x-full lg:translate-x-0;
 }
 
 .app-navbar .navigation {
-  @apply rounded-full p-1.5 shadow-md relative flex backdrop-blur bg-white/40;
+  @apply rounded-3xl lg:rounded-full p-1.5 shadow-md relative flex flex-col lg:flex-row backdrop-blur bg-white/40;
 }
 
 .app-navbar .navigation .navigation-link {
-  @apply whitespace-nowrap px-5 py-2 select-none cursor-pointer rounded-full relative z-10 inline-flex items-center;
+  @apply whitespace-nowrap px-5 py-2 select-none cursor-pointer rounded-full relative z-10 inline-flex justify-center items-center w-full lg:w-auto;
 }
 
 .app-navbar .navigation .navigation-link svg {

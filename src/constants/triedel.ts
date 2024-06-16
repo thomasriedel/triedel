@@ -1,5 +1,5 @@
 import type {Component} from "vue";
-import {IconLinkedIn, IconXing} from "@/assets/icons/fill";
+import {IconGmail, IconLinkedIn, IconXing} from "@/assets/icons/fill";
 
 interface PersonalData {
     firstname: string;
@@ -36,6 +36,11 @@ export const Triedel: PersonalData = {
             name: 'XING',
             icon: IconXing,
             url: 'https://www.xing.com/profile/Thomas_Riedel034162'
+        },
+        {
+            name: 'E-Mail',
+            icon: IconGmail,
+            url: 'mailto:thomasriedel.privat@gmail.com'
         },
     ]
 };

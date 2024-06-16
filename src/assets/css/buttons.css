@@ -1,5 +1,14 @@
-.btn-icon {
+[class*="btn-"] {
+    @apply backdrop-blur;
+}
+
+.btn-icon,
+.btn-icon-filled {
     @apply p-2 rounded-full hover:bg-black/5;
+}
+
+.btn-icon-filled {
+    @apply backdrop-blur bg-white/40 shadow;
 }
 
 .btn-icon svg {

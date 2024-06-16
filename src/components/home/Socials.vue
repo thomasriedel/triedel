@@ -2,7 +2,7 @@
   <div class="social-container">
     <template v-for="social in Triedel.social" :key="`social_${social.name}`">
       <a :href="social.url" target="_blank">
-        <div class="social-card">
+        <div class="card social-card">
           <component :is="social.icon"/>
           {{ social.name }}
         </div>
@@ -15,13 +15,11 @@ import {Triedel} from "@/constants";
 </script>
 <style scoped>
 .social-container {
-  @apply grid grid-cols-2 -ml-2 -mr-2;
+  @apply grid grid-cols-1 sm:grid-cols-3 sm:-ml-2 sm:-mr-2 max-sm:w-full;
 }
 
 .social-card {
-  @apply rounded-xl p-6 pb-4 mx-2;
-  @apply flex flex-col items-center justify-center;
-  @apply bg-triedel-gradient-0/50 duration-150 shadow-md hover:shadow-lg cursor-pointer;
+  @apply pb-4 mb-4 sm:mb-0 sm:mx-2 flex flex-col items-center justify-center cursor-pointer hover:shadow-lg;
 }
 
 .social-card svg {

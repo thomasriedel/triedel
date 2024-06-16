@@ -27,13 +27,18 @@
       "squash-player": "Squash-Spieler",
       "ux-professional": "UX Professional",
       "wdy-gp-champ": "worldiety GP Sieger"
-    }
+    },
+    "introduction": "Hi, ich bin Thomas,\n\ngeboren und aufgewachsen im schönen Oldenburg und mittlerweile Software Entwickler von Beruf. Ich möchte diese Webseite nutzen, um mich als Person und Entwickler kurz vorzustellen. Schau' Dich also gern um.\n\nBei Fragen oder anderen Anliegen, kontaktiere mich am besten über meine Socials oder via E-Mail! :)"
   },
   "icons-view": {
     "title": "Verwendete Icons",
     "creator": "Ersteller",
     "icon-pack": "Icon Pack",
     "license": "Lizenz"
+  },
+  "imprint": {
+    "title": "Impressum",
+    "information-according": "Angaben gemäß"
   },
   "personal-data": {
     "firstname": "Vorname",
@@ -44,8 +49,7 @@
     "email": "E-Mail",
     "mobile": "Mobil"
   },
-  "imprint": {
-    "title": "Impressum",
-    "information-according": "Angaben gemäß"
+  "settings": {
+    "label": "Einstellungen"
   }
 }

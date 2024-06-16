@@ -1,0 +1,9 @@
+.card {
+    @apply rounded-xl p-6;
+    @apply backdrop-blur bg-triedel-gradient-0/50 duration-150 shadow-md;
+}
+
+.mobile-card {
+    @apply card;
+    @apply lg:p-0 lg:bg-transparent lg:shadow-none
+}

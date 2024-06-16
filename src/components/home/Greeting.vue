@@ -1,10 +1,10 @@
 <template>
   <div class="greeting-container">
-    <div class="greeting">
-      <h2 class="">
+    <div class="greeting mobile-card">
+      <h2 class="max-lg:text-xl max-lg:text-center">
         {{ $t('home-view.greeting') }}
       </h2>
-      <h1 class="text-7xl px-6">
+      <h1 class="text-5xl lg:text-7xl px-6 max-lg:text-center">
         Thomas
       </h1>
       <div class="">
@@ -19,7 +19,7 @@
         </h5>
       </div>
     </div>
-    <div class="">
+    <div class="max-lg:-mb-12">
       <img :src="ImageTriedel" alt="Thomas Riedel" class="image-triedel"/>
     </div>
   </div>
@@ -59,18 +59,18 @@ init();
 </script>
 <style scoped>
 .greeting-container {
-  @apply flex items-center space-x-8;
+  @apply flex flex-col-reverse lg:flex-row items-center lg:space-x-8;
 }
 
 .greeting {
-  @apply h-full w-full -mt-8 relative;
+  @apply h-full w-full -mt-8 relative pb-14 lg:pb-0;
 }
 
 .image-triedel {
-  @apply max-w-[320px] rounded-full shadow-xl;
+  @apply max-lg:w-80 max-w-full lg:max-w-[320px] rounded-full shadow-xl;
 }
 
 .what-i-am {
-  @apply absolute right-0 top-full;
+  @apply absolute max-lg:left-0 right-0 bottom-6 lg:bottom-auto lg:top-full max-lg:text-center;
 }
 </style>

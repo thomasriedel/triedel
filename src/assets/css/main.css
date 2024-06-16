@@ -1,11 +1,12 @@
 @import "tailwind.css";
 
 @import "buttons.css";
+@import "cards.css";
 @import "transitions.css";
 @import "typography.css";
 
 html {
-    @apply scroll-smooth;
+    @apply scroll-smooth overflow-x-hidden;
 }
 
 body {
