@@ -19,9 +19,9 @@ const props = defineProps<Props>();
 const calculatedLeft = ref<number>(50);
 
 onMounted(() => {
-  nextTick(() => {
+  setTimeout(() => {
     calculatedLeft.value = props.value * 100;
-  });
+  }, 20);
 });
 </script>
 <style scoped>
