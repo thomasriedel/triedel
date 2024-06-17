@@ -1,6 +1,6 @@
 <template>
   <div class="social-container">
-    <template v-for="social in Triedel.social" :key="`social_${social.name}`">
+    <template v-for="social in Triedel.socials" :key="`social_${social.name}`">
       <a :href="social.url" target="_blank">
         <div class="card social-card">
           <component :is="social.icon"/>
@@ -8,10 +8,17 @@
         </div>
       </a>
     </template>
+    <a :href="`mailto:${Triedel.email}`" target="_blank">
+      <div class="card social-card">
+        <IconGmail />
+        {{ $t('socials.email') }}
+      </div>
+    </a>
   </div>
 </template>
 <script lang="ts" setup>
 import {Triedel} from "@/constants";
+import {IconGmail} from "@/assets/icons/fill";
 </script>
 <style scoped>
 .social-container {

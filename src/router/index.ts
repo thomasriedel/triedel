@@ -1,9 +1,10 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import {RouteName} from "@/enums";
-import {IconHouse} from "@/assets/icons/outline";
+import {IconCheckList, IconHouse} from "@/assets/icons/outline";
 import IconsView from "@/views/IconsView.vue";
 import ImprintView from "@/views/ImprintView.vue";
+import ProfileView from "@/views/ProfileView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +16,15 @@ const router = createRouter({
             meta: {
                 navbar: true,
                 icon: IconHouse,
+            },
+        },
+        {
+            path: '/profile',
+            name: RouteName.Profile,
+            component: ProfileView,
+            meta: {
+                navbar: true,
+                icon: IconCheckList,
             },
         },
         {

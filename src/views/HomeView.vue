@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center lg:pt-24">
+  <div class="flex flex-col items-center">
     <Greeting class="mb-8 lg:mb-12"/>
 
-    <div class="card whitespace-pre-line max-w-3xl mb-8">
+    <div class="card whitespace-pre-line w-full mb-8">
       {{ $t('home-view.introduction') }}
       <img :src="ImageSignature" alt="Thomas" class="image-signature dark:invert dark:opacity-90"/>
     </div>

@@ -24,6 +24,9 @@ export default {
                         1: '#0e1c26',
                     },
                 }
+            },
+            spacing: {
+                'content': '1000px'
             }
         },
     },

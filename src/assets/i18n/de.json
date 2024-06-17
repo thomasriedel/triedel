@@ -1,10 +1,9 @@
 {
   "routes": {
     "home": "Start",
-    "colors": "Farben",
-    "typography": "Typografie",
     "icons": "Icons",
-    "imprint": "Impressum"
+    "imprint": "Impressum",
+    "profile": "Steckbrief"
   },
   "colors-view": {
     "colors": {
@@ -48,6 +47,70 @@
     "city": "Ort",
     "email": "E-Mail",
     "mobile": "Mobil"
+  },
+  "profile": {
+    "base-data": {
+      "title": "Eckdaten",
+      "firstname": "Vorname",
+      "lastname": "Nachname",
+      "birthday": "Geburtstag",
+      "birthplace": "Geburtsort",
+      "socials": "Socials",
+      "email": "E-Mail"
+    },
+    "facts": {
+      "title": "Über mich"
+    },
+    "either-or": {
+      "title": "Entweder oder..",
+      "professional": {
+        "frontend-backend": {
+          "frontend": "Frontend",
+          "backend": "Backend"
+        },
+        "frontend-frameworks": {
+          "vue": "Vue.js",
+          "react": "React"
+        },
+        "frontend-languages": {
+          "js": "JavaScript",
+          "ts": "TypeScript"
+        },
+        "css-frameworks": {
+          "tailwind": "Tailwind CSS",
+          "bootstrap": "Bootstrap"
+        },
+        "backend-languages": {
+          "java": "Java",
+          "go": "Golang"
+        }
+      },
+      "fun": {
+        "early-late": {
+          "early": "Früh aufstehen",
+          "late": "Lange aufbleiben"
+        },
+        "food": {
+          "pizza": "Pizza",
+          "pasta": "Pasta"
+        },
+        "gaming": {
+          "pc": "PC",
+          "console": "Konsole"
+        },
+        "vacation": {
+          "beach": "Strand",
+          "mountains": "Berge"
+        },
+        "evening": {
+          "game-night": "Spieleabend",
+          "party": "Feiern gehen"
+        }
+      }
+    }
+  },
+  "socials": {
+    "email": "E-Mail"
   },
   "user-settings": {
     "dark-mode": {
