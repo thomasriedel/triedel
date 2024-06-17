@@ -1,8 +1,6 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import {RouteName} from "@/enums";
-import TypographyView from "@/views/TypographyView.vue";
-import ColorsView from "@/views/ColorsView.vue";
 import {IconHouse} from "@/assets/icons/outline";
 import IconsView from "@/views/IconsView.vue";
 import ImprintView from "@/views/ImprintView.vue";
@@ -17,22 +15,6 @@ const router = createRouter({
             meta: {
                 navbar: true,
                 icon: IconHouse,
-            },
-        },
-        {
-            path: '/colors',
-            name: RouteName.Colors,
-            component: ColorsView,
-            meta: {
-                navbar: true,
-            },
-        },
-        {
-            path: '/typography',
-            name: RouteName.Typography,
-            component: TypographyView,
-            meta: {
-                navbar: true,
             },
         },
         {
