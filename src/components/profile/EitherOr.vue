@@ -92,6 +92,17 @@
         </tr>
         <tr>
           <td>
+            {{ $t('profile.either-or.fun.tea-coffee.coffee') }}
+          </td>
+          <td>
+            <Scale :value="1"/>
+          </td>
+          <td>
+            {{ $t('profile.either-or.fun.tea-coffee.tea') }}
+          </td>
+        </tr>
+        <tr>
+          <td>
             {{ $t('profile.either-or.fun.gaming.pc') }}
           </td>
           <td>

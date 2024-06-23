@@ -4,44 +4,35 @@
       {{ $t('profile.base-data.title') }}
     </h1>
     <div class="card h-full">
-      <table>
-        <tr>
-          <td>
+      <div class="facts-grid grid grid-cols-3">
+          <div>
             {{ $t('profile.base-data.firstname') }}
-          </td>
-          <td>
+          </div>
+          <div>
             {{ Triedel.firstname }}
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </div>
+          <div>
             {{ $t('profile.base-data.lastname') }}
-          </td>
-          <td>
+          </div>
+          <div>
             {{ Triedel.lastname }}
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </div>
+          <div>
             {{ $t('profile.base-data.birthday') }}
-          </td>
-          <td>
+          </div>
+          <div>
             {{ DateUtils.formatDate(Triedel.birthday) }}
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </div>
+          <div>
             {{ $t('profile.base-data.birthplace') }}
-          </td>
-          <td>
+          </div>
+          <div>
             {{ Triedel.birthplace }}
-          </td>
-        </tr>
-        <tr>
-          <td>
+          </div>
+          <div>
             {{ $t('profile.base-data.email') }}
-          </td>
-          <td>
+          </div>
+          <div>
             <a :href="`mailto:${Triedel.email}`" target="_blank" class="underline">
               <span class="sm:hidden">
                 Gmail
@@ -50,23 +41,20 @@
                 {{ Triedel.email }}
               </span>
             </a>
-          </td>
-        </tr>
+          </div>
         <template v-for="(social, i) in Triedel.socials" :key="`social_${social.name}`">
-          <tr>
-            <td>
+            <div>
             <span v-if="i === 0">
               {{ $t('profile.base-data.socials') }}
             </span>
-            </td>
-            <td>
+            </div>
+            <div class="!mb-0">
               <a :href="social.url" target="_blank" class="underline">
                 {{ social.name }}
               </a>
-            </td>
-          </tr>
+            </div>
         </template>
-      </table>
+      </div>
     </div>
   </div>
 </template>
@@ -76,16 +64,12 @@ import {DateUtils} from "@/utils";
 </script>
 <style scoped>
 
-table {
-  @apply w-full;
+.facts-grid > div {
+  @apply even:col-span-2 sm:even:text-right max-sm:col-span-2 odd:max-sm:font-bold odd:max-sm:mb-1 even:max-sm:mb-4 max-sm:leading-none;
 }
 
-table tr td:first-child {
-  @apply pr-4 md:pr-8 lg:pr-16;
-}
-
-table tr td:last-child {
-  @apply text-right;
+.facts-grid > div:last-child {
+  @apply mb-0;
 }
 
 </style>

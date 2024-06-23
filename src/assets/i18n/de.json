@@ -58,11 +58,39 @@
       "socials": "Socials",
       "email": "E-Mail"
     },
-    "facts": {
-      "title": "Über mich"
+    "about-me": {
+      "title": "Über mich",
+      "fav-tech-stack": {
+        "label": "Lieblings-Tech-Stack",
+        "value": "Vue, Tailwind, Go"
+      },
+      "fav-club": {
+        "label": "Lieblingsverein",
+        "value": "SV Werder Bremen"
+      },
+      "fav-transport": {
+        "label": "Unterwegs mit",
+        "value": "Fahrrad"
+      },
+      "job-wish": {
+        "label": "Berufswunsch als Kind",
+        "value": "Busfahrer, Erfinder"
+      },
+      "fav-food": {
+        "label": "Lieblingsgericht",
+        "value": "Bratnudeln mit Erdnusssoße"
+      },
+      "fav-drink": {
+        "label": "Lieblingsgetränk",
+        "value": "Mai Tai"
+      },
+      "pet": {
+        "label": "Haustier",
+        "value": "Kater Teddy"
+      }
     },
     "either-or": {
-      "title": "Entweder oder..",
+      "title": "Entweder oder...",
       "professional": {
         "frontend-backend": {
           "frontend": "Frontend",
@@ -93,6 +121,10 @@
         "food": {
           "pizza": "Pizza",
           "pasta": "Pasta"
+        },
+        "tea-coffee": {
+          "tea": "Tee",
+          "coffee": "Kaffee"
         },
         "gaming": {
           "pc": "PC",

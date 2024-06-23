@@ -115,7 +115,7 @@ init();
 </script>
 <style scoped>
 .app-navbar {
-  @apply fixed top-0 left-1/2 transform -translate-x-1/2 w-screen flex items-center justify-between h-24 lg:h-32 z-30 px-6 max-w-[1400px];
+  @apply fixed top-0 left-1/2 transform -translate-x-1/2 w-full max-w-[100vw] flex items-center justify-between h-24 lg:h-32 z-30 px-6 max-w-[1400px];
 }
 
 .app-navbar .navigation-container {
