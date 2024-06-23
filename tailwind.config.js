@@ -26,7 +26,7 @@ export default {
                 }
             },
             spacing: {
-                'content': '1000px'
+                'content': '1400px'
             }
         },
     },

@@ -5,6 +5,7 @@ import IconHouse from './house.svg';
 import IconLightbulb from './lightbulb.svg';
 import IconLightbulbFlash from './lightbulb-flash.svg';
 import IconMenu from './menu.svg';
+import IconUserCircle from './user-circle.svg';
 
 export {
     IconArrowRight,
@@ -14,4 +15,5 @@ export {
     IconLightbulb,
     IconLightbulbFlash,
     IconMenu,
+    IconUserCircle,
 };

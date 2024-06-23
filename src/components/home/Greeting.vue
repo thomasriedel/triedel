@@ -63,7 +63,7 @@ init();
 }
 
 .greeting {
-  @apply h-full w-full -mt-8 relative pb-14 lg:pb-0;
+  @apply h-full w-full -mt-8 relative pb-14 lg:pb-0 overflow-visible;
 }
 
 .image-triedel {

@@ -44,9 +44,9 @@
           </div>
         <template v-for="(social, i) in Triedel.socials" :key="`social_${social.name}`">
             <div>
-            <span v-if="i === 0">
-              {{ $t('profile.base-data.socials') }}
-            </span>
+              <span v-if="i === 0">
+                {{ $t('profile.base-data.socials') }}
+              </span>
             </div>
             <div class="!mb-0">
               <a :href="social.url" target="_blank" class="underline">
@@ -62,14 +62,3 @@
 import {Triedel} from "@/constants";
 import {DateUtils} from "@/utils";
 </script>
-<style scoped>
-
-.facts-grid > div {
-  @apply even:col-span-2 sm:even:text-right max-sm:col-span-2 odd:max-sm:font-bold odd:max-sm:mb-1 even:max-sm:mb-4 max-sm:leading-none;
-}
-
-.facts-grid > div:last-child {
-  @apply mb-0;
-}
-
-</style>

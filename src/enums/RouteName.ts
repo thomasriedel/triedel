@@ -3,4 +3,5 @@ export enum RouteName {
     Icons = 'icons',
     Imprint = 'imprint',
     Profile = 'profile',
+    Resume = 'resume',
 }

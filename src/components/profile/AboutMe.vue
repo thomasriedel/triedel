@@ -4,7 +4,7 @@
       {{ $t('profile.about-me.title') }}
     </h1>
     <div class="card h-full">
-      <div class="facts-grid grid grid-cols-2">
+      <div class="facts-grid">
           <div>
             {{ $t('profile.about-me.fav-tech-stack.label') }}
           </div>
@@ -18,10 +18,10 @@
             {{ $t('profile.about-me.fav-club.value') }}
           </div>
           <div>
-            {{ $t('profile.about-me.fav-transport.label') }}
+            {{ $t('profile.about-me.fav-game.label') }}
           </div>
           <div>
-            {{ $t('profile.about-me.fav-transport.value') }}
+            {{ $t('profile.about-me.fav-game.value') }}
           </div>
           <div>
             {{ $t('profile.about-me.job-wish.label') }}
@@ -55,14 +55,3 @@
 import {Triedel} from "@/constants";
 import {DateUtils} from "@/utils";
 </script>
-<style scoped>
-
-.facts-grid > div {
-  @apply sm:even:text-right max-sm:col-span-2 odd:max-sm:font-bold odd:max-sm:mb-1 even:max-sm:mb-4 max-sm:leading-none;
-}
-
-.facts-grid > div:last-child {
-  @apply mb-0;
-}
-
-</style>

@@ -1,0 +1,19 @@
+.facts-grid {
+    @apply grid grid-cols-2;
+}
+
+.facts-grid > div {
+    @apply sm:even:text-right max-sm:col-span-2 odd:max-sm:font-bold odd:max-sm:mb-1 even:max-sm:mb-4 max-sm:leading-none;
+}
+
+.facts-grid.left-smaller {
+    @apply grid-cols-3;
+}
+
+.facts-grid.left-smaller > div {
+    @apply even:col-span-2;
+}
+
+.facts-grid > div:last-child {
+    @apply mb-0;
+}

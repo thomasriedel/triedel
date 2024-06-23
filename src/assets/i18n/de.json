@@ -3,7 +3,8 @@
     "home": "Start",
     "icons": "Icons",
     "imprint": "Impressum",
-    "profile": "Steckbrief"
+    "profile": "Steckbrief",
+    "resume": "Lebenslauf"
   },
   "colors-view": {
     "colors": {
@@ -46,7 +47,24 @@
     "zip-code": "PLZ",
     "city": "Ort",
     "email": "E-Mail",
-    "mobile": "Mobil"
+    "mobile": "Mobil",
+    "nationality": "Nationalität",
+    "nationalities": {
+      "german": "Deutsch"
+    },
+    "languages": {
+      "label": "Sprachen",
+      "languages": {
+        "german": "Deutsch",
+        "english": "Englisch",
+        "russian": "Russisch"
+      },
+      "levels": {
+        "native": "Muttersprache",
+        "fluent": "Fließend",
+        "basic": "Grundkenntnisse"
+      }
+    }
   },
   "profile": {
     "base-data": {
@@ -56,7 +74,8 @@
       "birthday": "Geburtstag",
       "birthplace": "Geburtsort",
       "socials": "Socials",
-      "email": "E-Mail"
+      "email": "E-Mail",
+      "mobile": "Mobil"
     },
     "about-me": {
       "title": "Über mich",
@@ -68,9 +87,9 @@
         "label": "Lieblingsverein",
         "value": "SV Werder Bremen"
       },
-      "fav-transport": {
-        "label": "Unterwegs mit",
-        "value": "Fahrrad"
+      "fav-game": {
+        "label": "Lieblingsspiel",
+        "value": "Rocket League, Portal 2"
       },
       "job-wish": {
         "label": "Berufswunsch als Kind",
@@ -139,6 +158,14 @@
           "party": "Feiern gehen"
         }
       }
+    }
+  },
+  "resume": {
+    "base-data": {
+      "name": "Name"
+    },
+    "contact-data": {
+      "address": "Adresse"
     }
   },
   "socials": {

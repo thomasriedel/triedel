@@ -1,10 +1,11 @@
 import {createRouter, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import {RouteName} from "@/enums";
-import {IconCheckList, IconHouse} from "@/assets/icons/outline";
+import {IconCheckList, IconHouse, IconUserCircle} from "@/assets/icons/outline";
 import IconsView from "@/views/IconsView.vue";
 import ImprintView from "@/views/ImprintView.vue";
 import ProfileView from "@/views/ProfileView.vue";
+import ResumeView from "@/views/ResumeView.vue";
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,9 +20,18 @@ const router = createRouter({
             },
         },
         {
-            path: '/profile',
+            path: '/steckbrief',
             name: RouteName.Profile,
             component: ProfileView,
+            meta: {
+                navbar: true,
+                icon: IconUserCircle,
+            },
+        },
+        {
+            path: '/lebenslauf',
+            name: RouteName.Resume,
+            component: ResumeView,
             meta: {
                 navbar: true,
                 icon: IconCheckList,
@@ -36,7 +46,7 @@ const router = createRouter({
             },
         },
         {
-            path: '/imprint',
+            path: '/impressum',
             name: RouteName.Imprint,
             component: ImprintView,
             meta: {

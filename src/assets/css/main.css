@@ -2,11 +2,12 @@
 
 @import "buttons.css";
 @import "cards.css";
+@import "facts-grid.css";
 @import "transitions.css";
 @import "typography.css";
 
 html {
-    @apply scroll-smooth overflow-x-hidden;
+    @apply scroll-smooth overflow-x-hidden overflow-y-scroll;
 }
 
 body {

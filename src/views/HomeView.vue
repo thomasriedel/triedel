@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center">
     <Greeting class="mb-8 lg:mb-12"/>
 
-    <div class="card whitespace-pre-line w-full mb-8">
+    <div class="card whitespace-pre-line w-full mb-8 max-w-[1000px]">
       {{ $t('home-view.introduction') }}
       <img :src="ImageSignature" alt="Thomas" class="image-signature dark:invert dark:opacity-90"/>
     </div>

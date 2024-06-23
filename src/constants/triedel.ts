@@ -6,12 +6,18 @@ interface PersonalData {
     lastname: string;
     birthday: Date;
     birthplace: string;
+    nationality: string;
+    languages: LanguageData[];
     street: string;
     zipCode: string;
     city: string;
     email: string;
     mobile: string;
     socials: SocialData[];
+}
+interface LanguageData {
+    language: string;
+    level: string;
 }
 
 interface SocialData {
@@ -25,6 +31,21 @@ export const Triedel: PersonalData = {
     lastname: "Riedel",
     birthday: new Date("04-04-1997"),
     birthplace: "Oldenburg",
+    nationality: "german",
+    languages: [
+        {
+            language: "german",
+            level: "native",
+        },
+        {
+            language: "english",
+            level: "fluent",
+        },
+        {
+            language: "russian",
+            level: "basic",
+        },
+    ],
     street: "Pellwormer Weg 1",
     zipCode: "26131",
     city: "Oldenburg",

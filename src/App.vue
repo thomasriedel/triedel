@@ -1,7 +1,7 @@
 <template>
   <AppNavbar/>
-  <div class="pt-32 px-6 max-w-[1400px] min-h-screen mx-auto flex flex-col">
-    <div class="flex-grow flex items-center justify-center pb-16 lg:pt-16 w-full max-w-content mx-auto">
+  <div class="pt-32 px-6 max-w-content min-h-screen mx-auto flex flex-col">
+    <div class="flex-grow flex items-center justify-center pb-16 lg:pt-16 w-full max-w-full mx-auto">
       <RouterView v-slot="{ Component }">
         <transition name="slide-fade" mode="out-in">
           <component :is="Component"/>

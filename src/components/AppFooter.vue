@@ -27,7 +27,7 @@ const currentRoute = computed<RouteLocationNormalized>(() => router.currentRoute
 </script>
 <style scoped>
 .app-footer {
-  @apply px-6 max-w-[1400px] mx-auto py-12 flex items-center justify-center;
+  @apply px-6 max-w-content mx-auto py-12 flex items-center justify-center;
 }
 
 .app-footer .navigation {
