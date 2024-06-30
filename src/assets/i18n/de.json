@@ -109,7 +109,7 @@
       }
     },
     "either-or": {
-      "title": "Entweder oder...",
+      "title": "Präferenzen",
       "professional": {
         "frontend-backend": {
           "frontend": "Frontend",
@@ -164,8 +164,21 @@
     "base-data": {
       "name": "Name"
     },
+    "career": {
+      "title": "Ausbildung, Karriere"
+    },
     "contact-data": {
       "address": "Adresse"
+    },
+    "skillset": {
+      "title": "Skillset",
+      "strength": {
+        "1": "Grundlagen",
+        "2": "Grundlagen und erste Praxiserfahrungen",
+        "3": "Sicherer, produktiver Umgang",
+        "4": "Regelmäßige Verwendung, sicherer und produktiver Umgang",
+        "5": "Experte, tiefgehendes Wissen"
+      }
     }
   },
   "socials": {

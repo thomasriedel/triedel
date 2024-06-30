@@ -31,7 +31,7 @@
           {{ $t('personal-data.languages.label') }}
         </span>
       </div>
-      <div class="!mb-0">
+      <div class="mb-2 leading-none">
         {{ $t(`personal-data.languages.languages.${lang.language}`) }}
         ({{ $t(`personal-data.languages.levels.${lang.level}`) }})
       </div>

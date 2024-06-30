@@ -8,7 +8,7 @@
 
         <!-- image card -->
         <div class="card md:!p-0 flex justify-center">
-            <img :src="ImageTriedel" alt="Thomas Riedel" class="image-triedel"/>
+          <img :src="ImageTriedel" alt="Thomas Riedel" class="image-triedel"/>
         </div>
 
         <!-- base data card -->
@@ -23,10 +23,10 @@
       </div>
       <div class="col-right">
         <div class="card mb-6">
-          todo skillset
+          <ResumeSkillset/>
         </div>
         <div class="card">
-          todo werdegang
+          <ResumeCareer/>
         </div>
       </div>
     </div>
@@ -36,6 +36,8 @@
 import ImageTriedel from "@/assets/images/triedel_wzo_cropped_1.jpg";
 import ResumeBaseData from "@/components/resume/ResumeBaseData.vue";
 import ResumeContactData from "@/components/resume/ResumeContactData.vue";
+import ResumeSkillset from "@/components/resume/ResumeSkillset.vue";
+import ResumeCareer from "@/components/resume/ResumeCareer.vue";
 </script>
 <style scoped>
 
