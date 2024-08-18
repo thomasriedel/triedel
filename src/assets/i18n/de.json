@@ -165,7 +165,9 @@
       "name": "Name"
     },
     "career": {
-      "title": "Ausbildung, Karriere"
+      "title": "Ausbildung, Karriere",
+      "final-grade": "Abschlussnote",
+      "ongoing-from": "Seit"
     },
     "contact-data": {
       "address": "Adresse"

@@ -25,6 +25,7 @@ interface PersonalData {
     mobile: string;
     socials: SocialData[];
     skillset: Skill[];
+    career: CareerData[];
 }
 interface LanguageData {
     language: string;
@@ -42,6 +43,20 @@ interface Skill {
     short: string;
     icon?: Component | string;
     strength: number;
+}
+
+interface CareerData {
+    title: string;
+    subtitle?: string;
+    institution?: {
+        title: string;
+        url: string;
+    };
+    finalGrade?: number;
+    description?: string;
+    start: string;
+    end?: string;
+    ongoing?: boolean;
 }
 
 export const Triedel: PersonalData = {
@@ -177,5 +192,45 @@ export const Triedel: PersonalData = {
         //     icon: IconGit,
         //     strength: 3,
         // },
+    ],
+    career: [
+        {
+            title: "Allgemeine Hochschulreife",
+            institution: {
+                title: "Neues Gymnasium Oldenburg",
+                url: "https://www.neuesgymnasium.eu/",
+            },
+            finalGrade: 2.4,
+            description: "Prüfungsfächer: Informatik, Mathematik, Physik, Englisch, Religion",
+            start: "2007",
+            end: "2015",
+        },
+        {
+            title: "Bachelor of Science, Informatik",
+            institution: {
+                title: "Carl von Ossietzky Universität Oldenburg",
+                url: "https://uol.de/",
+            },
+            finalGrade: 1.7,
+            description: "Schwerpunkt: Softwareentwicklung, Internettechnologien",
+            start: "2015",
+            end: "2019"
+        },
+        {
+            title: "CPUX-F Zertifizierung",
+            subtitle: "UXQB® Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            start: "2022",
+            description: "Grundlagenwissen zu den Themen Anforderungsanalyse, UX, UI, Usability, Accessibility"
+        },
+        {
+            title: "Software Entwickler",
+            institution: {
+                title: "worldiety GmbH",
+                url: "https://www.worldiety.de/",
+            },
+            description: "Schwerpunkt: Frontend, Full Stack",
+            start: "2019",
+            ongoing: true,
+        },
     ]
 };

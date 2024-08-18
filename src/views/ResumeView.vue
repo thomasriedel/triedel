@@ -6,18 +6,22 @@
     <div class="grid grid-cols-1 xl:grid-cols-4 xl:space-x-6">
       <div class="col-left">
 
-        <!-- image card -->
-        <div class="card md:!p-0 flex justify-center">
-          <img :src="ImageTriedel" alt="Thomas Riedel" class="image-triedel"/>
-        </div>
+        <div class="col-left-content">
 
-        <!-- base data card -->
-        <div class="card sm:col-span-2 xl:col-span-1 md:ml-6 xl:ml-0">
-          <ResumeBaseData/>
-        </div>
+          <!-- image card -->
+          <div class="card md:!p-0 flex justify-center">
+            <img :src="ImageTriedel" alt="Thomas Riedel" class="image-triedel"/>
+          </div>
 
-        <div class="card sm:col-span-2 xl:col-span-1 md:ml-6 xl:ml-0">
-          <ResumeContactData/>
+          <!-- base data card -->
+          <div class="card sm:col-span-2 xl:col-span-1 md:ml-6 xl:ml-0">
+            <ResumeBaseData/>
+          </div>
+
+          <div class="card sm:col-span-2 xl:col-span-1 md:ml-6 xl:ml-0">
+            <ResumeContactData/>
+          </div>
+
         </div>
 
       </div>
@@ -42,14 +46,18 @@ import ResumeCareer from "@/components/resume/ResumeCareer.vue";
 <style scoped>
 
 .col-left {
-  @apply col-span-1 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-1;
+  @apply col-span-1;
 }
 
-.col-left > div.card:first-child {
+.col-left-content {
+  @apply grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-1;
+}
+
+.col-left-content > div.card:first-child {
   @apply sm:row-span-2 lg:row-span-1;
 }
 
-.col-left > div.card {
+.col-left-content > div.card {
   @apply mb-6;
 }
 
