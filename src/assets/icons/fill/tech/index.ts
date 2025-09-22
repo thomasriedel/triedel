@@ -1,5 +1,6 @@
 import IconCockroachDB from './cockroachdb.svg';
 import IconDocker from './docker.svg';
+import IconElasticsearch from './elasticsearch.svg';
 import IconElectron from './electron.svg';
 import IconGit from './git.svg';
 import IconGolang from './golang.svg';
@@ -12,11 +13,13 @@ import IconPostgreSQL from './postgresql.svg';
 import IconSpringBoot from './springboot.svg';
 import IconTailwindCSS from './tailwindcss.svg';
 import IconTypeScript from './typescript.svg';
+import IconVite from './vite.svg';
 import IconVueJS from './vuejs.svg';
 
 export {
     IconCockroachDB,
     IconDocker,
+    IconElasticsearch,
     IconElectron,
     IconGit,
     IconGolang,
@@ -29,5 +32,6 @@ export {
     IconSpringBoot,
     IconTailwindCSS,
     IconTypeScript,
+    IconVite,
     IconVueJS,
 }

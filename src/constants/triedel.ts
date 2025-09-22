@@ -1,7 +1,7 @@
 import type {Component} from "vue";
 import {
     IconCockroachDB,
-    IconDocker,
+    IconDocker, IconElasticsearch,
     IconElectron,
     IconGit,
     IconGolang,
@@ -12,7 +12,7 @@ import {
     IconOracle,
     IconSpringBoot,
     IconTailwindCSS,
-    IconTypeScript,
+    IconTypeScript, IconVite,
     IconVueJS,
     IconXing
 } from "@/assets/icons/fill";
@@ -154,6 +154,12 @@ export const Triedel: PersonalData = {
             strength: 5,
         },
         {
+            name: "Vite",
+            short: "Vite",
+            icon: IconVite,
+            strength: 4,
+        },
+        {
             name: "Java",
             short: "Java",
             icon: IconOracle,
@@ -172,6 +178,12 @@ export const Triedel: PersonalData = {
             strength: 3,
         },
         {
+            name: "Elasticsearch",
+            short: "ES",
+            icon: IconElasticsearch,
+            strength: 3,
+        },
+        {
             name: "Electron",
             short: "Electron",
             icon: IconElectron,
@@ -184,11 +196,6 @@ export const Triedel: PersonalData = {
             strength: 3,
         },
         {
-            name: "Domain-driven Design",
-            short: "DDD",
-            strength: 3,
-        },
-        {
             name: "CPUX-F",
             short: "UX",
             strength: 3,
@@ -197,11 +204,6 @@ export const Triedel: PersonalData = {
             name: "Ausbildung",
             short: "AdA",
             strength: 3,
-        },
-        {
-            name: "Und mehr",
-            short: "...",
-            strength: 5,
         },
     ],
     career: [
