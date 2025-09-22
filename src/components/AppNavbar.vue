@@ -11,7 +11,13 @@
       </router-link>
     </div>
 
-    <div class="navigation-container" :class="mobileNavVisible ? 'nav-visible' : ''">
+    <div
+        ref="navigationContainer"
+        class="navigation-container"
+        :class="mobileNavVisible ? 'nav-visible' : ''"
+        tabindex="-1"
+        @blur="onBlur"
+    >
       <div class="navigation" @change="reloadActiveElement">
         <template v-for="route in routes" :key="`navbar_route_${route.name}`">
           <router-link :to="{ name: route.name }" @click="mobileNavVisible = false">
@@ -45,7 +51,7 @@
       </button>
       <button
           class="btn-icon-filled menu-button lg:hidden"
-          @click="mobileNavVisible = !mobileNavVisible"
+          @click="toggleMobileNavVisible"
       >
         <IconMenu v-if="!mobileNavVisible" class="w-5 h-5"/>
         <IconArrowRight v-else class="w-5 h-5"/>
@@ -67,8 +73,20 @@ const currentRoute = computed<RouteLocationNormalized>(() => router.currentRoute
 const activeElement = ref<Element | null>(null);
 const activeLinkBgStyle = ref('');
 
+const navigationContainer = ref<HTMLElement>();
 const mobileNavVisible = ref(false);
 const isDarkMode = ref(Core.userSettingsService.isDarkMode());
+
+function onBlur(event: PointerEvent): void {
+  if (!event.relatedTarget) mobileNavVisible.value = false;
+}
+
+function toggleMobileNavVisible(): void {
+  mobileNavVisible.value = !mobileNavVisible.value;
+  if (mobileNavVisible.value) {
+    navigationContainer.value?.focus();
+  }
+}
 
 function toggleDarkMode(): void {
   Core.userSettingsService.setDarkMode(!isDarkMode.value);
