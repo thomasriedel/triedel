@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory, createWebHistory} from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import {RouteName} from "@/enums";
 import {IconCheckList, IconHouse, IconUserCircle} from "@/assets/icons/outline";
@@ -8,7 +8,7 @@ import ProfileView from "@/views/ProfileView.vue";
 import ResumeView from "@/views/ResumeView.vue";
 
 const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
+    history: createWebHashHistory(import.meta.env.BASE_URL),
     routes: [
         {
             path: '/',
