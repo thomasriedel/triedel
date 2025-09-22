@@ -31,7 +31,7 @@ const currentRoute = computed<RouteLocationNormalized>(() => router.currentRoute
 }
 
 .app-footer .navigation {
-  @apply flex space-x-12;
+  @apply flex gap-x-12;
 }
 
 .app-footer .navigation-link.active {

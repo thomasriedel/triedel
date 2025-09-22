@@ -3,7 +3,7 @@
     <h1>
       {{ $t('routes.resume') }}
     </h1>
-    <div class="grid grid-cols-1 xl:grid-cols-4 xl:space-x-6">
+    <div class="grid grid-cols-1 xl:grid-cols-4 xl:gap-x-6">
       <div class="col-left">
 
         <div class="col-left-content">
@@ -27,7 +27,10 @@
       </div>
       <div class="col-right">
         <div class="card mb-6">
-          <ResumeSkillset/>
+          <ResumeMainSkills/>
+        </div>
+        <div class="card mb-6">
+          <ResumeOtherSkills/>
         </div>
         <div class="card">
           <ResumeCareer/>
@@ -40,8 +43,9 @@
 import ImageTriedel from "@/assets/images/triedel_wzo_cropped_1.jpg";
 import ResumeBaseData from "@/components/resume/ResumeBaseData.vue";
 import ResumeContactData from "@/components/resume/ResumeContactData.vue";
-import ResumeSkillset from "@/components/resume/ResumeSkillset.vue";
 import ResumeCareer from "@/components/resume/ResumeCareer.vue";
+import ResumeMainSkills from "@/components/resume/ResumeMainSkills.vue";
+import ResumeOtherSkills from "@/components/resume/ResumeOtherSkills.vue";
 </script>
 <style scoped>
 

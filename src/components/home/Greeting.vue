@@ -38,6 +38,7 @@ const whatIAm: string[] = [
   'rocket-league-champ',
   'full-stack-developer',
   'ux-professional',
+  'instructor',
   'software-developer',
 ]
 
@@ -59,7 +60,7 @@ init();
 </script>
 <style scoped>
 .greeting-container {
-  @apply flex flex-col-reverse lg:flex-row items-center lg:space-x-8;
+  @apply flex flex-col-reverse lg:flex-row items-center lg:gap-x-8;
 }
 
 .greeting {

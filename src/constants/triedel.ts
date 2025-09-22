@@ -1,10 +1,16 @@
 import type {Component} from "vue";
 import {
-    IconCockroachDB, IconElectron, IconGit,
+    IconCockroachDB,
+    IconDocker,
+    IconElectron,
+    IconGit,
     IconGolang,
-    IconJavaScript,
-    IconLinkedIn, IconMySQL, IconNodeJS, IconNpm,
-    IconOracle, IconPostgreSQL, IconSpringBoot,
+    IconLinkedIn,
+    IconMySQL,
+    IconNodeJS,
+    IconNpm,
+    IconOracle,
+    IconSpringBoot,
     IconTailwindCSS,
     IconTypeScript,
     IconVueJS,
@@ -22,10 +28,11 @@ interface PersonalData {
     zipCode: string;
     city: string;
     email: string;
-    mobile: string;
     socials: SocialData[];
-    skillset: Skill[];
+    mainSkills: Skill[];
+    otherSkills: Skill[];
     career: CareerData[];
+    importantTopics: string[];
 }
 interface LanguageData {
     language: string;
@@ -82,8 +89,7 @@ export const Triedel: PersonalData = {
     street: "Pellwormer Weg 1",
     zipCode: "26131",
     city: "Oldenburg",
-    email: "thomasriedel.privat@gmail.com",
-    mobile: "+49 162 219 2591",
+    email: "kontakt@thomas-riedel.dev",
     socials: [
         {
             name: 'LinkedIn',
@@ -96,7 +102,7 @@ export const Triedel: PersonalData = {
             url: 'https://www.xing.com/profile/Thomas_Riedel034162'
         },
     ],
-    skillset: [
+    mainSkills: [
         {
             name: "Vue.js",
             short: "Vue",
@@ -110,16 +116,30 @@ export const Triedel: PersonalData = {
             strength: 5,
         },
         {
-            name: "JavaScript",
-            short: "JS",
-            icon: IconJavaScript,
-            strength: 5,
-        },
-        {
             name: "Tailwind CSS",
             short: "CSS",
             icon: IconTailwindCSS,
             strength: 5,
+        },
+        {
+            name: "Go",
+            short: "Go",
+            icon: IconGolang,
+            strength: 4,
+        },
+        {
+            name: "Cockroach DB",
+            short: "DB",
+            icon: IconCockroachDB,
+            strength: 4,
+        },
+    ],
+    otherSkills: [
+        {
+            name: "Docker",
+            short: "Docker",
+            icon: IconDocker,
+            strength: 4,
         },
         {
             name: "Node.js",
@@ -140,27 +160,9 @@ export const Triedel: PersonalData = {
             strength: 4,
         },
         {
-            name: "Go",
-            short: "Go",
-            icon: IconGolang,
-            strength: 3,
-        },
-        {
             name: "MySQL",
             short: "SQL",
             icon: IconMySQL,
-            strength: 4,
-        },
-        {
-            name: "PostgreSQL",
-            short: "SQL",
-            icon: IconPostgreSQL,
-            strength: 4,
-        },
-        {
-            name: "Cockroach DB",
-            short: "DB",
-            icon: IconCockroachDB,
             strength: 4,
         },
         {
@@ -176,6 +178,12 @@ export const Triedel: PersonalData = {
             strength: 4,
         },
         {
+            name: "GIT",
+            short: "GIT",
+            icon: IconGit,
+            strength: 3,
+        },
+        {
             name: "Domain-driven Design",
             short: "DDD",
             strength: 3,
@@ -185,13 +193,16 @@ export const Triedel: PersonalData = {
             short: "UX",
             strength: 3,
         },
-        // Removed GIT for a cleaner grid in resume view
-        // {
-        //     name: "GIT",
-        //     short: "GIT",
-        //     icon: IconGit,
-        //     strength: 3,
-        // },
+        {
+            name: "Ausbildung",
+            short: "AdA",
+            strength: 3,
+        },
+        {
+            name: "Und mehr",
+            short: "...",
+            strength: 5,
+        },
     ],
     career: [
         {
@@ -232,5 +243,21 @@ export const Triedel: PersonalData = {
             start: "2019",
             ongoing: true,
         },
+        {
+            title: "Ausbilder",
+            institution: {
+                title: "worldiety GmbH",
+                url: "https://www.worldiety.de/",
+            },
+            start: "2025",
+            ongoing: true,
+            description: "Mit Nachweis der Ausbildereignungsprüfung (AdA)"
+        },
+    ],
+    importantTopics: [
+        "environmental-protection",
+        "sustainability",
+        "equal-rights",
+        "diversity"
     ]
 };

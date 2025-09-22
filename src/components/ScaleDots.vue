@@ -19,7 +19,7 @@ const props = defineProps<Props>();
 </script>
 <style scoped>
 .scale-dots-container {
-  @apply w-full flex items-center justify-center space-x-1;
+  @apply w-full flex items-center justify-center gap-x-1;
 }
 
 .scale-dot {

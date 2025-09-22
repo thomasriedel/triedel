@@ -22,13 +22,14 @@
       "darts-player": "Darts Spieler",
       "full-stack-developer": "Full Stack Entwickler",
       "hobby-chef": "Hobbykoch",
+      "instructor": "Ausbilder",
       "rocket-league-champ": "Rocket League Champ",
       "software-developer": "Software Entwickler",
       "squash-player": "Squash-Spieler",
       "ux-professional": "UX Professional",
       "wdy-gp-champ": "worldiety GP Sieger"
     },
-    "introduction": "Hi, ich bin Thomas,\n\ngeboren und aufgewachsen im schönen Oldenburg und mittlerweile Software Entwickler von Beruf. Ich möchte diese Webseite nutzen, um mich als Person und Entwickler kurz vorzustellen. Schau' Dich also gern um.\n\nBei Fragen oder anderen Anliegen, kontaktiere mich am besten über meine Socials oder via E-Mail! :)"
+    "introduction": "Moin, ich bin Thomas,\n\ngeboren und aufgewachsen im schönen Oldenburg und Software-Entwickler mit einer kreativen Ader. Ich möchte diese Webseite nutzen, um mich als Person und Entwickler kurz vorzustellen. Schau' Dich also gern um.\n\nBei Fragen oder anderen Anliegen, kontaktiere mich am besten über meine Socials oder via E-Mail! :)"
   },
   "icons-view": {
     "title": "Verwendete Icons",
@@ -64,6 +65,12 @@
         "fluent": "Fließend",
         "basic": "Grundkenntnisse"
       }
+    },
+    "important-topics": {
+      "diversity": "Diversität",
+      "environmental-protection": "Umweltschutz",
+      "equal-rights": "Gleichberechtigung",
+      "sustainability": "Nachhaltigkeit"
     }
   },
   "profile": {
@@ -115,10 +122,6 @@
           "frontend": "Frontend",
           "backend": "Backend"
         },
-        "frontend-frameworks": {
-          "vue": "Vue.js",
-          "react": "React"
-        },
         "frontend-languages": {
           "js": "JavaScript",
           "ts": "TypeScript"
@@ -158,6 +161,9 @@
           "party": "Feiern gehen"
         }
       }
+    },
+    "important-topics": {
+      "title": "Werte"
     }
   },
   "resume": {
@@ -172,8 +178,8 @@
     "contact-data": {
       "address": "Adresse"
     },
-    "skillset": {
-      "title": "Skillset",
+    "main-skills": {
+      "title": "Lieblings-Tech-Stack",
       "strength": {
         "1": "Grundlagen",
         "2": "Grundlagen und erste Praxiserfahrungen",
@@ -181,6 +187,9 @@
         "4": "Regelmäßige Verwendung, sicherer und produktiver Umgang",
         "5": "Experte, tiefgehendes Wissen"
       }
+    },
+    "other-skills": {
+      "title": "Weiteres Know-How"
     }
   },
   "socials": {

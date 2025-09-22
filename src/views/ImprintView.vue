@@ -20,14 +20,14 @@
           <a :href="`mailto:${Triedel.email}`" class="underline">{{ Triedel.email }}</a>
         </td>
       </tr>
-      <tr>
-        <td>
-          {{ $t('personal-data.mobile') }}:
-        </td>
-        <td>
-          <a :href="`tel:${Triedel.mobile.replaceAll(' ', '')}`" class="underline">{{ Triedel.mobile }}</a>
-        </td>
-      </tr>
+<!--      <tr>-->
+<!--        <td>-->
+<!--          {{ $t('personal-data.mobile') }}:-->
+<!--        </td>-->
+<!--        <td>-->
+<!--          <a :href="`tel:${Triedel.mobile.replaceAll(' ', '')}`" class="underline">{{ Triedel.mobile }}</a>-->
+<!--        </td>-->
+<!--      </tr>-->
     </table>
   </div>
 </template>

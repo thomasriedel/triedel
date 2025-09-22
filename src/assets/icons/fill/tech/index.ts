@@ -1,4 +1,5 @@
 import IconCockroachDB from './cockroachdb.svg';
+import IconDocker from './docker.svg';
 import IconElectron from './electron.svg';
 import IconGit from './git.svg';
 import IconGolang from './golang.svg';
@@ -15,6 +16,7 @@ import IconVueJS from './vuejs.svg';
 
 export {
     IconCockroachDB,
+    IconDocker,
     IconElectron,
     IconGit,
     IconGolang,

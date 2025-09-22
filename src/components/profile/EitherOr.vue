@@ -20,17 +20,6 @@
         </tr>
         <tr>
           <td>
-            {{ $t('profile.either-or.professional.frontend-frameworks.vue') }}
-          </td>
-          <td>
-            <Scale :value="0.1"/>
-          </td>
-          <td>
-            {{ $t('profile.either-or.professional.frontend-frameworks.react') }}
-          </td>
-        </tr>
-        <tr>
-          <td>
             {{ $t('profile.either-or.professional.frontend-languages.js') }}
           </td>
           <td>

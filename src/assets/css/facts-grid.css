@@ -1,9 +1,10 @@
 .facts-grid {
-    @apply grid grid-cols-2;
+    @apply grid grid-cols-3;
 }
 
 .facts-grid > div {
-    @apply sm:even:text-right max-sm:col-span-2 odd:max-sm:font-bold odd:max-sm:mb-1 even:max-sm:mb-4 max-sm:leading-none;
+    @apply max-sm:col-span-2 odd:max-sm:font-bold odd:max-sm:mb-1 even:max-sm:mb-4 max-sm:leading-none;
+    @apply sm:even:text-right even:col-span-2;
 }
 
 .facts-grid.left-smaller {
