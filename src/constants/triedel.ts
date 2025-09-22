@@ -259,7 +259,7 @@ export const Triedel: PersonalData = {
     importantTopics: [
         "environmental-protection",
         "sustainability",
-        "equal-rights",
-        "diversity"
+        "human-rights",
+        "equal-rights"
     ]
 };
