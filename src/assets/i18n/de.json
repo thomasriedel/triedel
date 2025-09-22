@@ -200,5 +200,8 @@
       "disable": "Licht an",
       "enable": "Licht aus"
     }
+  },
+  "footer": {
+    "contact": "Kontakt"
   }
 }

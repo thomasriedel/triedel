@@ -12,6 +12,9 @@
           </div>
         </router-link>
       </template>
+      <a :href="`mailto:${Triedel.email}`" target="_blank">
+        {{ $t('footer.contact') }}
+      </a>
     </div>
 
   </div>
@@ -19,6 +22,7 @@
 <script lang="ts" setup>
 import {type RouteLocationNormalized, useRouter} from "vue-router";
 import {computed} from "vue";
+import {Triedel} from "@/constants";
 
 const router = useRouter();
 const routes = router.getRoutes().filter((r) => r.meta.footer);
@@ -31,7 +35,7 @@ const currentRoute = computed<RouteLocationNormalized>(() => router.currentRoute
 }
 
 .app-footer .navigation {
-  @apply flex gap-x-12;
+  @apply flex max-sm:flex-col gap-x-12 gap-y-4 items-center;
 }
 
 .app-footer .navigation-link.active {
