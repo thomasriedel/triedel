@@ -28,6 +28,7 @@ interface PersonalData {
     zipCode: string;
     city: string;
     email: string;
+    website: string;
     socials: SocialData[];
     mainSkills: Skill[];
     otherSkills: Skill[];
@@ -90,6 +91,7 @@ export const Triedel: PersonalData = {
     zipCode: "26131",
     city: "Oldenburg",
     email: "kontakt@thomas-riedel.dev",
+    website: "thomas-riedel.dev",
     socials: [
         {
             name: 'LinkedIn',
@@ -208,15 +210,30 @@ export const Triedel: PersonalData = {
     ],
     career: [
         {
-            title: "Allgemeine Hochschulreife",
+            title: "Ausbilder",
             institution: {
-                title: "Neues Gymnasium Oldenburg",
-                url: "https://www.neuesgymnasium.eu/",
+                title: "worldiety GmbH",
+                url: "https://www.worldiety.de/",
             },
-            finalGrade: 2.4,
-            description: "Prüfungsfächer: Informatik, Mathematik, Physik, Englisch, Religion",
-            start: "2007",
-            end: "2015",
+            start: "2025",
+            ongoing: true,
+            description: "Mit Nachweis der Ausbildereignungsprüfung (AdA)"
+        },
+        {
+            title: "Software Entwickler",
+            institution: {
+                title: "worldiety GmbH",
+                url: "https://www.worldiety.de/",
+            },
+            description: "Schwerpunkt: Frontend, Full Stack",
+            start: "2019",
+            ongoing: true,
+        },
+        {
+            title: "CPUX-F Zertifizierung",
+            subtitle: "UXQB® Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
+            start: "2022",
+            description: "Grundlagenwissen zu den Themen Anforderungsanalyse, UX, UI, Usability, Accessibility"
         },
         {
             title: "Bachelor of Science, Informatik",
@@ -230,30 +247,15 @@ export const Triedel: PersonalData = {
             end: "2019"
         },
         {
-            title: "CPUX-F Zertifizierung",
-            subtitle: "UXQB® Certified Professional for Usability and User Experience – Foundation Level (CPUX-F)",
-            start: "2022",
-            description: "Grundlagenwissen zu den Themen Anforderungsanalyse, UX, UI, Usability, Accessibility"
-        },
-        {
-            title: "Software Entwickler",
+            title: "Allgemeine Hochschulreife",
             institution: {
-                title: "worldiety GmbH",
-                url: "https://www.worldiety.de/",
+                title: "Neues Gymnasium Oldenburg",
+                url: "https://www.neuesgymnasium.eu/",
             },
-            description: "Schwerpunkt: Frontend, Full Stack",
-            start: "2019",
-            ongoing: true,
-        },
-        {
-            title: "Ausbilder",
-            institution: {
-                title: "worldiety GmbH",
-                url: "https://www.worldiety.de/",
-            },
-            start: "2025",
-            ongoing: true,
-            description: "Mit Nachweis der Ausbildereignungsprüfung (AdA)"
+            finalGrade: 2.4,
+            description: "Prüfungsfächer: Informatik, Mathematik, Physik, Englisch, Religion",
+            start: "2007",
+            end: "2015",
         },
     ],
     importantTopics: [

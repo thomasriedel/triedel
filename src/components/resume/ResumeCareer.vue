@@ -45,12 +45,12 @@ import {Triedel} from "@/constants";
 </script>
 <style scoped>
 .step-title {
-  @apply flex flex-col md:flex-row-reverse justify-between items-center gap-2 md:gap-4 text-center;
+  @apply flex flex-col md:flex-row-reverse print:flex-row-reverse justify-between items-center gap-2 md:gap-4 print:gap-4 text-center;
 }
 
 .step-title h5,
 .step-institution {
-  @apply leading-none md:leading-normal;
+  @apply leading-none md:leading-normal print:leading-normal;
 }
 
 .step-subtitle,
@@ -63,7 +63,7 @@ import {Triedel} from "@/constants";
 }
 
 .step-institution {
-  @apply font-semibold max-md:text-center;
+  @apply font-semibold max-md:text-center print:text-left;
 }
 
 .step-description {

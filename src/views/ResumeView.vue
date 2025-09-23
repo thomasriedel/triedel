@@ -1,5 +1,6 @@
 <template>
   <div class="w-full">
+    <ResumePrintView />
     <h1>
       {{ $t('routes.resume') }}
     </h1>
@@ -46,6 +47,7 @@ import ResumeContactData from "@/components/resume/ResumeContactData.vue";
 import ResumeCareer from "@/components/resume/ResumeCareer.vue";
 import ResumeMainSkills from "@/components/resume/ResumeMainSkills.vue";
 import ResumeOtherSkills from "@/components/resume/ResumeOtherSkills.vue";
+import ResumePrintView from "@/components/resume/ResumePrintView.vue";
 </script>
 <style scoped>
 

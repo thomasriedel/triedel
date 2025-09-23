@@ -1,0 +1,26 @@
+html {
+    print-color-adjust: exact;
+}
+
+body {
+    @apply print:!bg-none print:h-full;
+
+    *:not(.print, .print *) {
+        @apply print:hidden;
+    }
+
+    .print {
+        @apply !hidden print:!block;
+    }
+}
+
+@media print {
+    html {
+        font-size: 8pt;
+    }
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}

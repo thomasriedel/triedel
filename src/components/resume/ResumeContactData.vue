@@ -19,6 +19,14 @@
         {{ Triedel.email }}
       </a>
     </div>
+    <div>
+      {{ $t('personal-data.website') }}
+    </div>
+    <div class="lg:col-span-full xl:col-span-2 sm:text-right">
+      <a :href="Triedel.website" target="_blank" class="underline">
+        {{ Triedel.website }}
+      </a>
+    </div>
 <!--    <div>-->
 <!--      {{ $t('personal-data.mobile') }}-->
 <!--    </div>-->

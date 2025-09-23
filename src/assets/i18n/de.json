@@ -49,6 +49,7 @@
     "city": "Ort",
     "email": "E-Mail",
     "mobile": "Mobil",
+    "website": "Webseite",
     "nationality": "Nationalität",
     "nationalities": {
       "german": "Deutsch"
@@ -190,6 +191,19 @@
     },
     "other-skills": {
       "title": "Weiteres Know-How"
+    },
+    "print": {
+      "personal-data": "Persönliche Daten",
+      "contact": "Kontakt",
+      "tech-stack": "Tech-Stack",
+      "more-skills": "Weitere Kenntnisse",
+      "software-developer": "Software-Entwickler",
+      "summary": {
+        "experience": "Über 6 Jahre Erfahrung in der Full-Stack-Entwicklung",
+        "cpux-f": "CPUX-F zertifiziert",
+        "instructor": "Ausbilder mit AdA-Schein",
+        "e-commerce-cross-platform": "Erfahrungen im Bereich E-Commerce und Cross Platform"
+      }
     }
   },
   "socials": {

@@ -1,5 +1,4 @@
 <template>
-
   <div class="facts-grid">
     <div>
       {{ $t('resume.base-data.name') }}
