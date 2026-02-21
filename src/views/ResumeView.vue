@@ -26,15 +26,18 @@
         </div>
 
       </div>
-      <div class="col-right">
-        <div class="card mb-6">
+      <div class="col-right grid grid-cols-1 gap-6">
+        <div class="card">
           <ResumeMainSkills/>
         </div>
-        <div class="card mb-6">
+        <div class="card">
           <ResumeOtherSkills/>
         </div>
         <div class="card">
           <ResumeCareer/>
+        </div>
+        <div class="card">
+          <ResumeCertificates/>
         </div>
       </div>
     </div>
@@ -48,6 +51,7 @@ import ResumeCareer from "@/components/resume/ResumeCareer.vue";
 import ResumeMainSkills from "@/components/resume/ResumeMainSkills.vue";
 import ResumeOtherSkills from "@/components/resume/ResumeOtherSkills.vue";
 import ResumePrintView from "@/components/resume/ResumePrintView.vue";
+import ResumeCertificates from "@/components/resume/ResumeCertificates.vue";
 </script>
 <style scoped>
 

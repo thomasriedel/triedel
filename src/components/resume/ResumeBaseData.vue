@@ -25,12 +25,12 @@
       {{ $t('personal-data.nationalities.german') }}
     </div>
     <template v-for="(lang, i) in Triedel.languages" :key="`resume_lang_${lang.language}`">
-      <div>
+      <div class="leading-none pt-1">
         <span v-if="i === 0">
           {{ $t('personal-data.languages.label') }}
         </span>
       </div>
-      <div class="mb-2 leading-none">
+      <div class="mb-1 leading-none pt-1">
         {{ $t(`personal-data.languages.languages.${lang.language}`) }}
         ({{ $t(`personal-data.languages.levels.${lang.level}`) }})
       </div>

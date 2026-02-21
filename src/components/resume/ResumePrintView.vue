@@ -32,13 +32,20 @@
             <ul class="tech-stack">
               <template v-for="skill in Triedel.mainSkills" :key="`resume_print_main_skill_${skill.name}`">
                 <li>
-                <span>
-                  <Component v-if="skill.icon" :is="skill.icon"/>
-                  <h4 v-else>
-                    {{ skill.short }}
-                  </h4>
-                  {{ skill.name }}
-                </span>
+                  <div>
+                    <Component v-if="skill.icon" :is="skill.icon"/>
+                    <h4 v-else>
+                      {{ skill.short }}
+                    </h4>
+                    <div class="skill-content">
+                      <span>
+                        {{ skill.name }}
+                      </span>
+                      <span>
+                        {{ skill.yearsOfExperience }} {{ $t('misc.year', {count: skill.yearsOfExperience}) }}
+                      </span>
+                    </div>
+                  </div>
                 </li>
               </template>
             </ul>
@@ -53,13 +60,20 @@
             <ul class="tech-stack">
               <template v-for="skill in Triedel.otherSkills" :key="`resume_print_other_skill_${skill.name}`">
                 <li>
-                <span>
-                  <Component v-if="skill.icon" :is="skill.icon"/>
-                  <span v-else class="font-bold text-lg">
-                    {{ skill.short }}
-                  </span>
-                  {{ skill.name }}
-                </span>
+                  <div>
+                    <Component v-if="skill.icon" :is="skill.icon"/>
+                    <span v-else class="font-bold text-lg">
+                      {{ skill.short }}
+                    </span>
+                    <div class="skill-content">
+                      <span>
+                        {{ skill.name }}
+                      </span>
+                      <span>
+                        {{ skill.yearsOfExperience }} {{ $t('misc.year', {count: skill.yearsOfExperience}) }}
+                      </span>
+                    </div>
+                  </div>
                 </li>
               </template>
             </ul>
@@ -78,24 +92,10 @@
 
           <span class="spacer"></span>
 
-          <ul class="summary">
-            <li>
-              {{ $t('resume.print.summary.experience') }}
-            </li>
-            <li>
-              {{ $t('resume.print.summary.cpux-f') }}
-            </li>
-            <li>
-              {{ $t('resume.print.summary.instructor') }}
-            </li>
-            <li>
-              {{ $t('resume.print.summary.e-commerce-cross-platform') }}
-            </li>
-          </ul>
-
-          <span class="spacer"></span>
-
-          <ResumeCareer class="w-full"/>
+          <div class="grid grid-cols-1 gap-6">
+            <ResumeCareer class="w-full"/>
+            <ResumeCertificates class="w-full"/>
+          </div>
 
         </div>
       </div>
@@ -108,6 +108,7 @@ import ResumeBaseData from "@/components/resume/ResumeBaseData.vue";
 import ResumeContactData from "@/components/resume/ResumeContactData.vue";
 import {Triedel} from "@/constants";
 import ResumeCareer from "@/components/resume/ResumeCareer.vue";
+import ResumeCertificates from "@/components/resume/ResumeCertificates.vue";
 </script>
 <style scoped>
 .resume-print-view {
@@ -117,7 +118,7 @@ import ResumeCareer from "@/components/resume/ResumeCareer.vue";
     @apply flex w-full flex-grow;
 
     .left-col {
-      @apply p-12 pb-[5.75rem];
+      @apply p-12 pb-[4.5rem];
       @apply w-2/5 h-full bg-triedel-gradient-0;
       @apply flex flex-col gap-6 items-center;
 
@@ -126,11 +127,19 @@ import ResumeCareer from "@/components/resume/ResumeCareer.vue";
       }
 
       .tech-stack {
-        li > span {
+        li > div {
           @apply flex items-center gap-2 pb-2;
 
           svg {
             @apply w-6 h-6;
+          }
+
+          .skill-content {
+            @apply grow flex items-center justify-between gap-2;
+
+            span:last-child {
+              @apply opacity-75;
+            }
           }
         }
       }

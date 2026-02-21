@@ -8,7 +8,7 @@
 @import "typography.css";
 
 html {
-    @apply scroll-smooth overflow-x-hidden overflow-y-scroll;
+    @apply scroll-smooth overflow-x-hidden overflow-y-scroll tracking-wide;
 }
 
 body {

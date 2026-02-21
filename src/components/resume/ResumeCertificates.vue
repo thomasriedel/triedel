@@ -1,20 +1,14 @@
 <template>
   <div class="">
     <h4 class="mb-2">
-      {{ $t('resume.career.title') }}
+      {{ $t('resume.certificates.title') }}
     </h4>
     <div class="grid grid-cols-1 gap-4">
-      <template v-for="step in Triedel.career">
-        <div class="career-step card">
+      <template v-for="step in Triedel.certificates">
+        <div class="card">
           <div class="step-title">
             <div class="step-dates">
-              <template v-if="step.ongoing">
-                {{ $t('resume.career.ongoing-from') }}
-              </template>
-              {{ step.start }}
-              <template v-if="step.end">
-                - {{ step.end }}
-              </template>
+              {{ step.year }}
             </div>
             <h5 class="">
               {{ step.title }}

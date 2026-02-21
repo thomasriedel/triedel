@@ -95,7 +95,7 @@
             {{ $t('profile.either-or.fun.gaming.pc') }}
           </td>
           <td>
-            <Scale :value="0.5"/>
+            <Scale :value="0.65"/>
           </td>
           <td>
             {{ $t('profile.either-or.fun.gaming.console') }}

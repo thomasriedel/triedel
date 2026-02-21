@@ -41,6 +41,9 @@
     "title": "Impressum",
     "information-according": "Angaben gemäß"
   },
+  "misc": {
+    "year": "Jahr|Jahre"
+  },
   "personal-data": {
     "firstname": "Vorname",
     "lastname": "Nachname",
@@ -176,6 +179,9 @@
       "final-grade": "Abschlussnote",
       "ongoing-from": "Seit"
     },
+    "certificates": {
+      "title": "Zertifikate"
+    },
     "contact-data": {
       "address": "Adresse"
     },
@@ -197,13 +203,7 @@
       "contact": "Kontakt",
       "tech-stack": "Tech-Stack",
       "more-skills": "Weitere Kenntnisse",
-      "software-developer": "Software-Entwickler",
-      "summary": {
-        "experience": "Über 6 Jahre Erfahrung in der Full-Stack-Entwicklung",
-        "cpux-f": "CPUX-F zertifiziert",
-        "instructor": "Ausbilder mit AdA-Schein",
-        "e-commerce-cross-platform": "Erfahrungen im Bereich E-Commerce und Cross Platform"
-      }
+      "software-developer": "Software-Entwickler"
     }
   },
   "socials": {

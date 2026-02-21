@@ -7,16 +7,17 @@
       <template v-for="skill in Triedel.mainSkills" :key="`main_skill_${skill.short}`">
         <div class="card skill-card" :title="`${skill.name}`">
           <div class="skill-icon">
-            <Component v-if="skill.icon" :is="skill.icon" />
+            <Component v-if="skill.icon" :is="skill.icon"/>
             <h4 v-else>
               {{ skill.short }}
             </h4>
           </div>
-<!--          <div class="skill-strength">-->
-<!--            <ScaleDots :max="5" :value="skill.strength"/>-->
-<!--          </div>-->
           <div class="skill-title">
             {{ skill.name }}
+          </div>
+          <div class="skill-strength">
+            <!--            <ScaleDots :max="5" :value="skill.strength"/>-->
+            {{ skill.yearsOfExperience }} {{ $t('misc.year', { count: skill.yearsOfExperience }) }}
           </div>
         </div>
       </template>
@@ -39,7 +40,7 @@ import ScaleDots from "@/components/ScaleDots.vue";
 }
 
 .skill-strength {
-  @apply mb-2;
+  @apply text-sm text-center opacity-50;
 }
 
 .skill-title {
