@@ -39,6 +39,7 @@ const whatIAm: string[] = [
   'full-stack-developer',
   'ux-professional',
   'instructor',
+  'aoc-champ',
   'software-developer',
 ]
 

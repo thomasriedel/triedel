@@ -17,6 +17,7 @@
   "home-view": {
     "greeting": "Moin, ich bin",
     "what-i-am": {
+      "aoc-champ": "Advent of Code Sieger",
       "cat-father": "Katzenpapa",
       "cyclist": "Radfahrer",
       "darts-player": "Darts Spieler",
