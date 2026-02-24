@@ -1,8 +1,11 @@
 <template>
   <div class="">
-    <h4 class="mb-2">
+    <h4>
       {{ $t('resume.main-skills.title') }}
     </h4>
+    <div class="subtitle mb-2">
+      {{ $t('resume.main-skills.subtitle') }}
+    </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
       <template v-for="skill in Triedel.mainSkills" :key="`main_skill_${skill.short}`">
         <div class="card skill-card" :title="`${skill.name}`">

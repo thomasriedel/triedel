@@ -26,9 +26,14 @@
           <span class="spacer"></span>
 
           <div class="w-full">
-            <h4 class="mb-3">
-              {{ $t('resume.print.tech-stack') }}
-            </h4>
+            <div class="flex items-center justify-between mb-3">
+              <h4>
+                {{ $t('resume.print.tech-stack.title') }}
+              </h4>
+              <span class="subtitle pt-2">
+                {{ $t('resume.print.tech-stack.subtitle') }}
+              </span>
+            </div>
             <ul class="tech-stack">
               <template v-for="skill in Triedel.mainSkills" :key="`resume_print_main_skill_${skill.name}`">
                 <li>
@@ -54,9 +59,14 @@
           <span class="spacer"></span>
 
           <div class="w-full">
-            <h4 class="mb-3">
-              {{ $t('resume.print.more-skills') }}
-            </h4>
+            <div class="flex items-center justify-between mb-3">
+              <h4>
+                {{ $t('resume.print.more-skills.title') }}
+              </h4>
+              <span class="subtitle pt-2">
+                {{ $t('resume.print.more-skills.subtitle') }}
+              </span>
+            </div>
             <ul class="tech-stack">
               <template v-for="skill in Triedel.otherSkills" :key="`resume_print_other_skill_${skill.name}`">
                 <li>

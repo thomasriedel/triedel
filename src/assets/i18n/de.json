@@ -187,6 +187,7 @@
       "address": "Adresse"
     },
     "main-skills": {
+      "subtitle": "+ Erfahrung in Jahren",
       "title": "Lieblings-Tech-Stack",
       "strength": {
         "1": "Grundlagen",
@@ -197,13 +198,20 @@
       }
     },
     "other-skills": {
+      "subtitle": "+ Erfahrung in Jahren",
       "title": "Weiteres Know-How"
     },
     "print": {
       "personal-data": "Persönliche Daten",
       "contact": "Kontakt",
-      "tech-stack": "Tech-Stack",
-      "more-skills": "Weitere Kenntnisse",
+      "tech-stack": {
+        "subtitle": "Erfahrung",
+        "title": "Tech-Stack"
+      },
+      "more-skills": {
+        "subtitle": "Erfahrung",
+        "title": "Weitere Kenntnisse"
+      },
       "software-developer": "Software-Entwickler"
     }
   },

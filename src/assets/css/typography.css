@@ -41,6 +41,10 @@ h5 {
     font-weight: 600;
 }
 
+.subtitle {
+    @apply text-sm opacity-60 italic -mt-1;
+}
+
 p {
     @apply mb-4;
 }
